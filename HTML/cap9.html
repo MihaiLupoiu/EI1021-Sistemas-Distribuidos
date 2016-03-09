@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<TITLE>Formularios</TITLE>
+</HEAD>
+
+<BODY BGCOLOR=#ffffbb>
+
+<h2>CAPITULO 9. Formularios</h2>
+<h4>Campos de un formulario</h4>
+<TEXTAREA ROWS=55 COLS=80>
+
+<FORM ACTION="xxxx.html" METHOD=POST>
+
+  <TABLE BORDER=1>
+    <TR>
+      <TD>NOMBRE:</TD><TD>
+        <INPUT NAME="NOMBRE" TYPE=TEXT SIZE=32></TD>
+    </TR>
+    <TR>
+      <TD>CLAVE:</TD><TD>
+        <INPUT NAME="CLAVE" TYPE=PASSWORD SIZE=10></TD>
+    </TR>
+    <TR>
+      <TD>¿2+2?</TD>
+      <TD>
+        <INPUT NAME="SUMA" TYPE=RADIO VALUE="MAL">3
+        <INPUT NAME="SUMA" TYPE=RADIO VALUE="BIEN">4
+        <INPUT NAME="SUMA" TYPE=RADIO VALUE="MAL">5
+      </TD>
+    </TR>
+    <TR>
+      <TD>COMENTARIO:</TD><TD>
+        &lt;TEXTAREA NAME="COMENTARIO" ROWS=4 COLS=50>&lt;/TEXTAREA></TD>
+    </TR>
+    <TR>
+      <TD>EQUIPO:</TD>
+      <TD>
+        <SELECT NAME="EQUIPO">
+          <OPTION> VALENCIA
+          <OPTION> BARCELONA
+          <OPTION> MADRID
+        </SELECT>
+      </TD>
+    </TR>
+    <TR>
+      <TD>PROPIETARIO:</TD>
+      <TD>
+        <OL>
+          <LI><INPUT NAME="COCHE" TYPE=CHECKBOX> TENGO COCHE
+          <LI><INPUT NAME="moto" TYPE=CHECKBOX> TENGO MOTO
+          <LI><INPUT NAME="casa" TYPE=CHECKBOX> TENGO CASA
+          <LI><INPUT NAME="chalet" TYPE=CHECKBOX> TENGO CHALET
+        </OL>
+      </TD>
+    </TR>
+
+    <TR>
+      <TD COLSPAN=2>
+        <INPUT TYPE="SUBMIT" VALUE="enviar datos">
+      </TD>
+    </TR>
+  </TABLE>
+</FORM>
+
+
+</TEXTAREA>
+
+
+</BODY>
+</html>

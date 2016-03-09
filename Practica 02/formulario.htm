@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<table align="center" border="1">
+   <tr>
+      <td><h1 align="text-align:center;">Alta de clientes de la tienda "Kirby's Comics"</h1></td>
+   </tr>
+
+   <tr>
+      <td>
+         <form>
+            <table align="center">
+               <tr>
+                  <td>Nombre (*):</td>
+                  <td><input type="text" required="required"></td>
+               </tr>
+               <tr>
+                  <td>Primer apellido (*):</td>
+                  <td><input type="text" required="required"></td>
+               </tr>
+               <tr>
+                  <td>Segundo apellido:</td>
+                  <td><input type="text"></td>
+               </tr>
+               <tr>
+                  <td>DNI (*):</td>
+                  <td><input maxlength="9" type="text" required="required"></td>
+               </tr>
+               <tr>
+                  <td>Email:</td>
+                  <td><input type="text"></td>
+               </tr>
+               <tr>
+                  <td>Tipo de pago (*):</td>
+                  <td><input type="radio" name="pago" value="contrarreembolso" required="required">Contrarreembolso
+                    <input type="radio" name="pago" value="visa">Tarjeta VISA
+                    <input type="radio" name="pago" value="cheque">Cheque</td>
+               </tr>
+               <tr>
+                  <td>Fecha de nacimiento (dd-mm-aaaa):</td>
+                  <td><input type="text"></td>
+               </tr>
+               <tr>
+                  <td>Hijos:</td>
+                  <td><input type="checkbox" name="hijos" value="Hijos"></td>
+               </tr>
+               <tr>
+                  <td>Sexo:</td>
+                  <td><input type="radio" name="sexo" value="hombre">Hombre
+                    <input type="radio" name="sexo" value="mujer">Mujer</td>
+               </tr>
+               <tr>
+                  <td>Estudios:</td>
+                  <td><select name="estudios">
+                     <option value="vacio">Seleccione un tipo de estudios:</option>
+                     <option value="sinestudios">Sin estudios</option>
+                     <option value="primaria">Educación primaria</option>
+                     <option value="secundaria">Educación Secundaria</option>
+                     <option value="universidad">Estudios Universitarios</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Área de titulación universitaria:</td>
+                  <td><select name="titulacion">
+                     <option value="vacio">Seleccione un área (si tiene estudios universitarios):</option>
+                     <option value="ninguna">Ninguna</option>
+                     <option value="juridica">Jurídica</option>
+                     <option value="economica">Económica</option>
+                     <option value="ciencias">Ciencias</option>
+                     <option value="ingenieria">Ingeniería o arquitectura</option>
+                     <option value="salud">Ciencias de la Salud</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Contraseña (*):</td>
+                  <td><input type="password" name="pwd" required="required"></td>
+               </tr>
+               <tr>
+                  <td>Repita contraseña (*):</td>
+                  <td><input type="password" name="repwd" required="required"></td>
+               </tr>
+	       <tr>
+		   <td align="center"><input type="submit" value="Enviar Datos"></td>
+		   <td align="center"><input type="reset" value="Borrar Datos"></td>
+	       </tr>
+            </table>
+         </form>
+      </td>
+   </tr>
+</table>
+<p>(*) Los campos con asterisco son obligatorios. </p>
+   
+</body>
+</html>

@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<TITLE>Frames</TITLE>
+</HEAD>
+
+<BODY BGCOLOR=#ffff00>
+
+<h2>CAPITULO 13. Frames</h2>
+<h4>Un marco o frame es una ventana independiente dentro de la ventana general.</h4>
+
+<TEXTAREA ROWS=13 COLS=60>
+
+<HTML>
+  <HEAD>
+    ...
+  </HEAD>
+
+  <FRAMESET COLS="20%,80%">
+    <FRAME NAME="INDICE" SRC="INDICE.HTML">
+    <FRAME NAME="PRINCIPAL" SRC="INTRODUCCION.HTML">
+  </FRAMESET>
+
+</HTML>
+
+</TEXTAREA>
+
+<h4>Parámetros de FRAMESET.</h4>
+
+<TEXTAREA ROWS=8 COLS=60>
+
+COLS = Ancho asignado a cada uno de los frames
+
+ROWS = Alto asignado a cada uno de los frames
+
+BORDER = 0
+
+FRAMEBORDER =  Ancho del borde de la frame
+
+</TEXTAREA>
+
+
+<h4>Parámetros de FRAME.</h4>
+
+<TEXTAREA ROWS=14 COLS=60>
+
+NAME = Nombre de la frame
+
+SRC = página web asignada a esa frame
+
+SCROLLING = Si queremos que se coloquen las barras de desplazamiento. Sus posibles valores son YES, NO o AUTO
+
+NORESIZE = Si el usuario puede cambiar o no el tamaño del marco.
+
+MARGINWIDTH = Cambio de los márgenes horizontales dentro de un marco
+
+MARGINHEIGHT = Igual pero los verticales
+
+</TEXTAREA>
+
+<h4>Acceso a otros marcos.</h4>
+
+<TEXTAREA ROWS=7 COLS=60>
+
+Por defecto cuando se pulsa sobre un enlace (hipervículo), la nueva página la veremos encerrada en ese mismo marco.
+Para abrir esa página en otro marco utilizaremos el parámetro TARGET dentro del hipervínculo.
+
+<A HREF="pagina.html" TARGET="PRINCIPAL">SALTO</A>
+
+</TEXTAREA>
+
+<h4>Acceso a otros marcos ESPECIALES.</h4>
+
+<TEXTAREA ROWS=12 COLS=60>
+
+_TOP = Elimina todos los marcos existentes y muestra la nueva página en la ventana original sin marcos
+
+_BLANK = Muestra la nueva página en una ventana nueva
+
+_SELF = Muestra la nueva página en el marco donde está declarado el enlace
+
+_PARENT = Muestra la nueva página en el FRAMESET que contiene al marco donde se declara el enlace
+
+</TEXTAREA>
+
+</BODY>
+</html>

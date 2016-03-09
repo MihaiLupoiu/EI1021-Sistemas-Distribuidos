@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>Mapas</TITLE>
+</HEAD>
+
+<BODY BGCOLOR=#ffffbb>
+
+<h2>CAPITULO 11. Mapas</h2>
+<h4>Mapas gestionados por el cliente</h4>
+
+<TEXTAREA ROWS=20 COLS=60>
+
+  SHAPE         COORDS
+
+ * RECT         X1,Y1,X2,Y2 (Superior derecha, Inferior Izquierda)
+ * CIRC         X,Y,radio (indicando el centro del circulo)
+ * POLY         x1,y1,x2,y2, ..., xn,yn
+ * default
+
+<MAP NAME="NOMBRE_MAPA">
+  <AREA SHAPE=RECT COORDS="0,0,24,31"
+    HREF="http://www.terra.es" Alt="Terra">
+  <AREA SHAPE=RECT COORDS="26,0,53,31"
+    HREF="http://www.google.com" Alt="Google">
+  <AREA SHAPE=DEFAULT NOHREF ALT="Nada">
+</MAP>
+
+<IMG SRC="DOSBUSCADORES.GIF" WIDTH=53 HEIGHT=31 BORDER=0
+     USEMAP="#NOMBRE_MAPA">
+
+</TEXTAREA>
+
+</BODY>
+</html>
